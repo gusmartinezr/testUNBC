@@ -4,6 +4,8 @@ use App\Http\Controllers\Auth\UserController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
+use Illuminate\Support\Facades\Auth;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -34,3 +36,5 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::delete('/user/{userId}', [UserController::class, 'destroy'])->name('user.destroy');
 });
+
+require __DIR__ . '/auth.php';
