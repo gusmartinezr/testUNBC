@@ -24,6 +24,6 @@ Este es un proyecto desarrollado con Laravel version 10.48.10.
 ## Credenciales de Acceso
 
 -   **Correo Electrónico:** correo@example.com
--   **Contraseña:** 123456789
+-   **Contraseña:** password
 
 Nota: Las credenciales de acceso son predeterminadas.
